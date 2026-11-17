@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Бесплатный урок · ИИ-креатор</title>
-<meta name="description" content="Бесплатный урок: в чём суть профессии ИИ-креатора и как начать новичку.">
-<meta property="og:title" content="Бесплатный урок · ИИ-креатор">
-<meta property="og:description" content="В чём суть профессии ИИ-креатора и как начать новичку.">
+<title>Бесплатный урок · видео с помощью нейросетей</title>
+<meta name="description" content="Бесплатный урок Ярослава Монтаны: как создавать видео с помощью нейросетей. 25 минут.">
+<meta property="og:title" content="Бесплатный урок · видео с помощью нейросетей">
+<meta property="og:description" content="Как создавать видео с помощью нейросетей. 25 минут, без воды.">
 <meta name="robots" content="noindex">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
@@ -28,7 +28,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 28px 16px 48px;
+    padding: 28px 16px 64px;
     background:
       radial-gradient(1200px 500px at 50% -10%, rgba(232,194,122,.10), transparent 60%),
       var(--bg);
@@ -44,10 +44,11 @@
   h1 {
     font-size: clamp(26px, 5vw, 44px);
     line-height: 1.12; font-weight: 800; letter-spacing: -.01em;
-    margin: 28px 0 22px;
+    margin: 28px 0 14px;
     text-wrap: balance;
   }
   h1 em { font-style: normal; color: var(--accent); }
+  .lead { color: var(--muted); font-size: 17px; margin-bottom: 22px; max-width: 640px; }
   .video {
     position: relative; width: 100%; aspect-ratio: 16 / 9;
     border-radius: 14px; overflow: hidden;
@@ -55,7 +56,15 @@
     box-shadow: 0 30px 80px rgba(0,0,0,.5);
   }
   .video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
-  .cta { margin-top: 32px; display: flex; justify-content: center; }
+  .cta {
+    margin-top: 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    text-align: center;
+  }
+  .cta p { color: var(--muted); font-size: 15px; }
   .btn {
     display: inline-block; text-decoration: none;
     background: var(--green); color: #fff;
@@ -63,7 +72,6 @@
     padding: 18px 44px; border-radius: 999px;
     transition: transform .15s ease, box-shadow .15s ease;
     box-shadow: 0 10px 30px rgba(34,197,94,.30);
-    white-space: nowrap;
   }
   .btn:hover { transform: translateY(-2px); box-shadow: 0 14px 36px rgba(34,197,94,.45); }
   @media (max-width: 560px) {
@@ -75,22 +83,23 @@
   <div class="wrap">
     <header>
       <div class="brand">YAROSLAV MONTANA</div>
-      <div class="tag">Бесплатный урок</div>
+      <div class="tag">Бесплатный урок · 25 минут</div>
     </header>
 
-    <h1>Как выйти на доход от <em>150.000р.</em> на профессии Ai-креатор</h1>
+    <h1>Как создавать <em>видео</em> с помощью нейросетей</h1>
+    <p class="lead">Без воды: какие инструменты брать и как собирать ролики, за которые платит бизнес.</p>
 
     <div class="video">
-      <!-- id ролика с YouTube: часть ссылки после watch?v= или youtu.be/ -->
       <iframe
-        src="https://www.youtube-nocookie.com/embed/DKoM6GG6Hqk?rel=0&modestbranding=1"
-        title="Бесплатный урок"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        src="https://www.youtube-nocookie.com/embed/aSw--lS5IL4?rel=0&modestbranding=1"
+        title="Бесплатный урок: как создавать видео с помощью нейросетей"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen></iframe>
     </div>
 
     <div class="cta">
-      <a class="btn" href="https://t.me/montana_yaroslav?text=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D0%BB%D0%B8%D1%87%D0%BD%D1%8B%D0%B9%20%D1%80%D0%B0%D0%B7%D0%B1%D0%BE%D1%80." target="_blank" rel="noopener">Получить разбор</a>
+      <p>Досмотрел урок и хочешь систему целиком, смету и месяц связи со мной?</p>
+      <a class="btn" href="https://yaroslav-montana.github.io/course/" target="_blank" rel="noopener">Узнать подробнее про обучение</a>
     </div>
   </div>
 </body>
